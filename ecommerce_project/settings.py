@@ -5,8 +5,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'Lo6tFFj_AIjHqnIdCH3xMjA95YPT1752pJzBPvf_aQFA_CJEfbD8rV50H3nx6z1oN8M'
 
-DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+DEBUG = os.getenv("DEBUG", "False") == "True"
+
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "ecommerce-nava.onrender.com"]
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
