@@ -3,12 +3,10 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'Lo6tFFj_AIjHqnIdCH3xMjA95YPT1752pJzBPvf_aQFA_CJEfbD8rV50H3nx6z1oN8M'
+SECRET_KEY = "_v@9^tnct%8$mi^tpqfjkvy@@_m1xf1g*m9d-1nsqtgh2z&#t"
 
-DEBUG = os.getenv("DEBUG", "False") == "True"
-
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "ecommerce-nava.onrender.com"]
-
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -66,3 +64,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
